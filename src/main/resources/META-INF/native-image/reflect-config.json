@@ -142,18 +142,6 @@
   "methods":[{"name":"setupModule","parameterTypes":["com.fasterxml.jackson.databind.Module$SetupContext"] }]
 },
 {
-  "name":"com.google.gson.Gson",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"com.google.gson.GsonBuilder",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
   "name":"de.wandi34.graalDemo.GraalDemoApplication",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
@@ -184,14 +172,6 @@
   "name":"java.lang.Class[]"
 },
 {
-  "name":"java.lang.Cloneable",
-  "allDeclaredMethods":true
-},
-{
-  "name":"java.lang.Comparable",
-  "allDeclaredMethods":true
-},
-{
   "name":"java.lang.Comparable[]"
 },
 {
@@ -211,9 +191,6 @@
 },
 {
   "name":"java.lang.String[]"
-},
-{
-  "name":"java.lang.annotation.Annotation[]"
 },
 {
   "name":"java.lang.annotation.Documented",
@@ -254,20 +231,10 @@
   "name":"java.util.ArrayList"
 },
 {
-  "name":"java.util.Date",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
   "name":"java.util.Enumeration"
 },
 {
   "name":"java.util.HashSet"
-},
-{
-  "name":"java.util.concurrent.Callable",
-  "methods":[{"name":"call","parameterTypes":[] }]
 },
 {
   "name":"java.util.concurrent.Executor"
@@ -292,9 +259,6 @@
 },
 {
   "name":"javax.annotation.Resource"
-},
-{
-  "name":"javax.json.bind.Jsonb"
 },
 {
   "name":"javax.naming.ldap.LdapContext"
@@ -755,40 +719,10 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
-  "name":"org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
+  "name":"org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration"
 },
 {
-  "name":"org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.gson.GsonBuilderCustomizer",
-  "allPublicMethods":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.gson.GsonProperties",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration$JacksonAndJsonbUnavailableCondition",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
-  "name":"org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration$PreferGsonOrJacksonAndJsonbUnavailableCondition",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
+  "name":"org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration"
 },
 {
   "name":"org.springframework.boot.autoconfigure.http.HttpMessageConverters",
@@ -825,14 +759,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.JsonbHttpMessageConvertersConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.http.JsonbHttpMessageConvertersConfiguration$PreferJsonbOrMissingJacksonAndGsonCondition",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
+  "name":"org.springframework.boot.autoconfigure.http.JsonbHttpMessageConvertersConfiguration"
 },
 {
   "name":"org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration",
@@ -1922,9 +1849,6 @@
   ]
 },
 {
-  "name":"org.springframework.http.converter.json.GsonHttpMessageConverter"
-},
-{
   "name":"org.springframework.http.converter.json.Jackson2ObjectMapperBuilder",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
@@ -2171,10 +2095,6 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.web.servlet.FlashMapManager",
-  "allPublicMethods":true
-},
-{
   "name":"org.springframework.web.servlet.FrameworkServlet",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
@@ -2230,18 +2150,6 @@
     {"name":"init","parameterTypes":[] }, 
     {"name":"setEnvironment","parameterTypes":["org.springframework.core.env.Environment"] }
   ]
-},
-{
-  "name":"org.springframework.web.servlet.LocaleResolver",
-  "allPublicMethods":true
-},
-{
-  "name":"org.springframework.web.servlet.RequestToViewNameTranslator",
-  "allPublicMethods":true
-},
-{
-  "name":"org.springframework.web.servlet.ThemeResolver",
-  "allPublicMethods":true
 },
 {
   "name":"org.springframework.web.servlet.View",
@@ -2425,12 +2333,6 @@
   "allDeclaredMethods":true
 },
 {
-  "name":"org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
   "name":"org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
@@ -2486,25 +2388,6 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.web.servlet.support.AbstractFlashMapManager",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "methods":[
-    {"name":"getFlashMapTimeout","parameterTypes":[] }, 
-    {"name":"getUrlPathHelper","parameterTypes":[] }, 
-    {"name":"retrieveAndUpdate","parameterTypes":["javax.servlet.http.HttpServletRequest","javax.servlet.http.HttpServletResponse"] }, 
-    {"name":"saveOutputFlashMap","parameterTypes":["org.springframework.web.servlet.FlashMap","javax.servlet.http.HttpServletRequest","javax.servlet.http.HttpServletResponse"] }, 
-    {"name":"setFlashMapTimeout","parameterTypes":["int"] }, 
-    {"name":"setUrlPathHelper","parameterTypes":["org.springframework.web.util.UrlPathHelper"] }
-  ]
-},
-{
-  "name":"org.springframework.web.servlet.support.SessionFlashMapManager",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
   "name":"org.springframework.web.servlet.support.WebContentGenerator",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
@@ -2528,21 +2411,6 @@
     {"name":"setUseExpiresHeader","parameterTypes":["boolean"] }, 
     {"name":"setVaryByRequestHeaders","parameterTypes":["java.lang.String[]"] }
   ]
-},
-{
-  "name":"org.springframework.web.servlet.theme.AbstractThemeResolver",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "methods":[
-    {"name":"getDefaultThemeName","parameterTypes":[] }, 
-    {"name":"setDefaultThemeName","parameterTypes":["java.lang.String"] }
-  ]
-},
-{
-  "name":"org.springframework.web.servlet.theme.FixedThemeResolver",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
 },
 {
   "name":"org.springframework.web.servlet.view.AbstractCachingViewResolver",
@@ -2570,12 +2438,6 @@
 },
 {
   "name":"org.springframework.web.servlet.view.ContentNegotiatingViewResolver",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
