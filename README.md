@@ -42,6 +42,9 @@ tree $MI
 mvn -Pgraal clean package
 ```
 
+## Start the application
+After successfully compiling the application you can start the application with
+`./target/de.wandi34.graaldemo.graaldemoapplication`
 ## Resources
 Application was built with following documentations:
 * https://spring.io/blog/2020/04/16/spring-tips-the-graalvm-native-image-builder-feature
