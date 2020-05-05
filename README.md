@@ -26,9 +26,9 @@ The following steps are needed to compile the spring boot application to native 
 mvn -DskipTests=true clean package
 export MI=src/main/resources/META-INF
 mkdir -p $MI 
-java -agentlib:native-image-agent=config-output-dir=${MI}/native-image -jar target/reactive.jar
+java -agentlib:native-image-agent=config-output-dir=${MI}/native-image -jar target/YOUR_APP.jar
 
-## Due to https://github.com/oracle/graal/issues/2198 you have to add a dependency to reflect-config.json. Maybe its fixed in GraalVM version > 20.0.0
+## Due to https://github.com/oracle/graal/issues/2198 you have to add a class to reflect-config.json. Maybe its fixed in GraalVM version > 20.0.0
 {
  "name":"org.apache.catalina.authenticator.jaspic.AuthConfigFactoryImpl",
  "allDeclaredConstructors":true,
