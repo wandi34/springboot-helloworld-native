@@ -16,7 +16,7 @@ The application is very simple (just giving out "Hello World" at `localhost:8080
 Spring Boot JVM  | Spring Boot Native
 ------------- | -------------
 Startup: Started GraalDemoApplication in 1.305 seconds (JVM running for 1.644)  | Startup: Started GraalDemoApplication in 0.066 seconds (JVM running for 0.068)
-RAM Usage: ca 502.9 MB  | RAM Usage: ca 104.1 MB
+RAM Usage: ca 502.9 MB  | RAM Usage: ca 37 MB
 Size: 16 MB | Size: 89 MB
 
 
