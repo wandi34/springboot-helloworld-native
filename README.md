@@ -1,10 +1,16 @@
 # Hello World app in SpringBoot compiled with GraalVM
 
 ## Dependencies
+* **Important**: Because of [#1057](https://github.com/oracle/graal/issues/1057) this tutorial is only runable on Linux machines. (native image agent is only available for Linux) 
 * Install GraalVM from here https://www.graalvm.org/ (Used version **20.0.0**)
+    * (For Mac OSX versions > Catalina: Remove quarantine from the bits, [info](https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-21.0.0.2))  
+    `$ sudo xattr -r -d com.apple.quarantine path/to/graalvm/folder/`
 * Configure your env 
-	* Prepend the GraalVM bin directory to the PATH environment variable: $ export PATH=<path to GraalVM>/bin:$PATH To verify whether you are using GraalVM, run: $ which java
-	* Set the JAVA_HOME environment variable to resolve to the GraalVM installation directory: $ export JAVA_HOME=<path to GraalVM> 
+	* Prepend the GraalVM bin directory to the **PATH** environment variable:  
+	  `$ export PATH=<path to GraalVM>/Contents/Home/bin:$PATH`.  
+	   To verify whether you are using GraalVM, run: `$ which java`
+	* Set the **JAVA_HOME** environment variable to resolve to the GraalVM installation directory:  
+	 `$ export JAVA_HOME=<path to GraalVM>/Contents/Home`
 	* (Specify GraalVM as the JRE or JDK installation in your Java IDE) 
 
 ## Version Information
@@ -24,10 +30,10 @@ Size: 16 MB | Size: 89 MB
 The following steps are needed to compile the spring boot application to native code with GraalVm
 
 ```
-mvn -DskipTests=true clean package
+mvn -DskipTests clean package
 export MI=src/main/resources/META-INF
 mkdir -p $MI 
-java -agentlib:native-image-agent=config-output-dir=${MI}/native-image -jar target/YOUR_APP.jar
+java -agentlib:native-image-agent=config-output-dir=${MI}/native-image -jar target/<YOUR_APP_ARTIFACT>.jar
 
 ## Due to https://github.com/oracle/graal/issues/2198 you have to add a class to reflect-config.json. Maybe its fixed in GraalVM version > 20.0.0
 {
